@@ -1,4 +1,6 @@
-const defaultState = {};
+const defaultState = {
+	users: ["No users!"],
+};
 
 const homePageReducer = (state = defaultState, action) => {
 	switch (action.type) {

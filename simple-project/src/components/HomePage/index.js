@@ -1,6 +1,14 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import { createSelector } from "reselect";
+import { makeSelectUsers } from "./selectors";
 
-const homePage = (props) => {
+const stateSelector = createSelector(makeSelectUsers, (users) => ({ users }));
+
+const HomePage = (props) => {
+	const { users } = useSelector(stateSelector);
+	console.log(users);
+
 	return (
 		<div>
 			<h1>Hello Lorem Ipsum</h1>
@@ -8,4 +16,4 @@ const homePage = (props) => {
 	);
 };
 
-export default homePage;
+export default HomePage;
