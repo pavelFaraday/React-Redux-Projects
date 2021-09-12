@@ -4,6 +4,7 @@ import { createSelector } from "reselect";
 import { makeSelectUsers } from "./selectors";
 import Axios from "axios";
 import { setUsers } from "./actions";
+import UsersList from "./usersList";
 
 const stateSelector = createSelector(makeSelectUsers, (users) => ({ users }));
 
@@ -28,11 +29,11 @@ const HomePage = (props) => {
 		fetchUsers();
 	}, []);
 
-	console.log("Users:", users);
+	// console.log("Users:", users);
 
 	return (
 		<div>
-			<h1>Hello Lorem Ipsum</h1>
+			<UsersList />
 		</div>
 	);
 };
