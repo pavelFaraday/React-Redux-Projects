@@ -35,8 +35,4 @@ Complex Projects with React &amp; Redux
 
 Toast Notifications are popup messages that are added so as to display a message to a user. It can be a success message, warning message, or a custom message. Toast Notification is also called as Toastify Notifications. This all toast notification comes under-react-toastify module so to use them we need to import this module. [React Toastify](https://www.npmjs.com/package/react-toastify)
 
-**install** all these in one command:
-
--   `npm i bootstrap react-router-dom react-toastify redux react-redux redux-devtools-extension`
-
 ---
