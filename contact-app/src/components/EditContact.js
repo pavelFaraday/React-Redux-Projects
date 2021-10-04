@@ -1,12 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const EditContact = () => {
+    const {id} = useParams(); 
+
     return (
         <div className='container'>
             <div className='row'>
                 <h1 className='display-3 text-center my-5'>
-                    Edit Contact
+                    Edit Contact {id}
                 </h1>
 
                 <div className="col-md-6 shadow mx-auto p-5">
